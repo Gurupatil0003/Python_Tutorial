@@ -1,13 +1,13 @@
-# Artificial Intelligence
+# Python Full Stack Development
 
 
 ## **🎓 Course Information**
 
-- **Subject Code** : 203105322
-- **Faculty**: Mr Smaranjit Ghose (Assistant Professor)
-- **Semester**: 5
+- **Subject Code** : 
+- **Faculty**: Mr Guranna Gouda  (Assistant Professor)
+- **Semester**: 4
 - **Year**: 2023
-- **Divisions** (under direct tutelage): 5B5, 5B6, 5B7, 5B8, 5B17
+- **Divisions** (under direct tutelage): 
 
 
 ## **📚 Study Material**
@@ -15,7 +15,7 @@
 
 |Unit | Name | Lecture Material | 
 |-----|------|-------------------|
-| 1 | Introduction to Artificial Intelligence | [Unit 1 Material](https://github.com/smaranjitghose/ParulUniversityAI/blob/master/Unit%201.pptx) | 
+| 1 | Introduction to Python Full Stack | [Unit 1 Material](https://github.com/smaranjitghose/ParulUniversityAI/blob/master/Unit%201.pptx) | 
 | 2 | Exploratory Data Analysis | [Unit 2 Material](https://github.com/smaranjitghose/ParulUniversityAI/tree/master/EDA) | 
 | 3 | State Space Search| - [Unit 3 Material](https://docs.google.com/presentation/d/1RWcXZaFgThKbOM9FM3CF5n7nMAgfsE83FDUiGRMaDKI/edit?usp=sharing)| 
 | 4 | Knowledge Representation | [Unit 4 Material ](https://docs.google.com/presentation/d/18pDtVmlpP-T_C7N3oGf7H9FEWf291R2jNWYC75ZeVt4/edit?usp=sharing)| 
