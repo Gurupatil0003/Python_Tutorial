@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Management</title>
+</head>
+<body>
+    <h1>Bank Account Management</h1>
+    <p>Current Balance: ${{ balance }}</p>
+    
+    <h2>Actions</h2>
+    <ul>
+        <li><a href="/deposit">Deposit</a></li>
+        <li><a href="/withdraw">Withdraw</a></li>
+    </ul>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <h2>Deposit</h2>
+    <form action="/deposit" method="post">
+        <label for="amount">Amount:</label>
+        <input type="number" step="0.01" name="amount" required>
+        <button type="submit">Deposit</button>
+    </form>
+
+    <h2>Withdraw</h2>
+    <form action="/withdraw" method="post">
+        <label for="amount">Amount:</label>
+        <input type="number" step="0.01" name="amount" required>
+        <button type="submit">Withdraw</button>
+    </form>
+</body>
+</html>
