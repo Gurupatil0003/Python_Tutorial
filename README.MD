@@ -7,7 +7,7 @@
 - **Faculty**: Mr Guranna Gouda  (Assistant Professor)
 - **Semester**: 4
 - **Year**: 2023
-- **Divisions** (under direct tutelage): 
+- **Divisions** (under direct tutelage): 4B17,4B18,4B19
 
 
 ## **📚 Study Material**
