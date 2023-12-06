@@ -16,14 +16,11 @@
 |Unit | Name | Lecture Material | 
 |-----|------|-------------------|
 | 1 | Introduction to Python Full Stack  | [Unit 1 Material]() | 
-| 2 | Functions,OOPS Concepts | [Unit 2 Material]() | 
-| 3 | State Space Search| - [Unit 3 Material]()| 
-| 4 | Knowledge Representation | [Unit 4 Material ]()| 
-| 5 | Fuzzy Logic |[Unit 5 Material]() | 
-| 6 | Natural Language Processing | [Unit 6 Material]() | 
-| 7 | Machine Learning | Discussed via hands on | 
-| 8 | Fundamentals of Neural Networks and Expert Systems | [Unit 7 Material]() | 
-
+| 2 | Functions,OOPS Concepts and Exceptions and File handling | [Unit 2 Material]() | 
+| 3 | Modules and Packages and PyCharm IDE| - [Unit 3 Material]()| 
+| 4 | Flask Framework | [Unit 4 Material ]()| 
+| 5 | Django Framework |[Unit 5 Material]() | 
+| 6 | RESTful APIs| [Unit 6 Material]() | 
 
 
 
