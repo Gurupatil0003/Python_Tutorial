@@ -1,7 +1,5 @@
 <h2><div style="font-family: Trebuchet MS; background-color: #1b191d; color: #FFFFFF; padding: 12px; font-size: 35px; line-height: 1.5;text-align: center; line-height: 1.;">🅶🆄 🆁🅰🅽🅽🅰 🅶🅾🆄🅳🅰--🅳🅰🆃🅰🆂🅲🅸🅴🅽🆃 👨‍💻</div> 
 
-<h1 style="font-family: Trebuchet MS; padding: 10px; font-size: 40px; color: #19AADE; text-align: center; line-height: 1.;"><b><span style="color: #000000"> Loops in Python </span></b><br><span style="color: #19AADE; font-size: 24px"></span></h1>
-<hr>
 
 # Python Full Stack Development
 
