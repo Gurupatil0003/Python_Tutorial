@@ -1,5 +1,6 @@
 # Python Full Stack Development
-<h6><div style="font-family: Trebuchet MS; background-color: #1b191d; color: #FFFFFF; padding: 12px; font-size: 35px; line-height: 1.5;text-align: center; line-height: 1.;">🅶🆄 🆁🅰🅽🅽🅰 🅶🅾🆄🅳🅰--🅳🅰🆃🅰🆂🅲🅸🅴🅽🆃 👨‍💻</div> </h6>
+# <h6><div style="font-family: Trebuchet MS; background-color: #1b191d; color: #FFFFFF; padding: 12px; font-size: 35px; line-height: 1.5;text-align: center; line-height: 1.;">🅶🆄 🆁🅰🅽🅽🅰 🅶🅾🆄🅳🅰--🅳🅰🆃🅰🆂🅲🅸🅴🅽🆃 👨‍💻</div> </h6>
+
 
 
 ## **🎓 Course Information**
