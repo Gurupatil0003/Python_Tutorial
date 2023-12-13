@@ -18,7 +18,7 @@
 
 |Unit | Name | Lecture Material | 
 |-----|------|-------------------|
-| 1 | Introduction to Python | [Unit 1 Material](https://bytexl.app/content/3zeuvj5n3/python/3zh4pzccw/introduction-to-python/history-and-features-of-python) | (https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zmbcmqva/topic-a1-introduction-to-python)|
+| 1 | Introduction to Python | [Unit 1 Material](https://bytexl.app/content/3zeuvj5n3/python/3zh4pzccw/introduction-to-python/history-and-features-of-python) |
 
 | 2 | Functions,OOPS Concepts and Exceptions and File handling | [Unit 2 Material]() | 
 | 3 | Modules and Packages and PyCharm IDE| - [Unit 3 Material]()| 
