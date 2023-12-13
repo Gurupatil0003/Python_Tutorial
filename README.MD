@@ -18,7 +18,7 @@
 
 |Unit | Name | Lecture Material | 
 |-----|------|-------------------|
-| 1 | Introduction to Python Full Stack  | [Unit 1 Material]() | 
+| 1 | Introduction to Python Full Stack  | [Unit 1 Material](https://bytexl.app/content/3zeuvj5n3/python/3zh4pzccw/introduction-to-python/history-and-features-of-python) | 
 | 2 | Functions,OOPS Concepts and Exceptions and File handling | [Unit 2 Material]() | 
 | 3 | Modules and Packages and PyCharm IDE| - [Unit 3 Material]()| 
 | 4 | Flask Framework | [Unit 4 Material ]()| 
