@@ -16,15 +16,16 @@
 ## **📚 Study Material**
 
 
-| Unit | Name                                      | Lecture Material                                                | PPT Materials |
+| Unit--1 | Name                                      | Lecture Material                                                | PPT Materials |
 |------|-------------------------------------------|-----------------------------------------------------------------|---------------|
 | 1    | Introduction to Python                    | [Unit 1 Python Introduction](https://bytexl.app/content/3zeuvj5n3/python/3zh4pzccw/introduction-to-python/history-and-features-of-python) | [PPT Materials](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zmbcmqva/topic-a1-introduction-to-python)          |
-| 2    | Functions, OOPS Concepts, and Exceptions   | [Unit 2 Material]()                                             | []()          |
-| 3    | Modules and Packages and PyCharm IDE      | [Unit 3 Material]()                                             | []()          |
-| 4    | Flask Framework                           | [Unit 4 Material]()                                             | []()          |
-| 5    | Django Framework                          | [Unit 5 Material]()                                             | []()          |
-| 6    | RESTful APIs                              | [Unit 6 Material]()                                             | []()          |
-
+| 2    | Data types & Variables   | [Unit 1 Material](https://bytexl.app/content/3zeuvj5n3/python/3zh4wu3su/introduction-to-python/basic-data-types-and-variables)| [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3z7nbws4y/topic-a2-data-types-variables)          |
+| 3    | Operators      | [Unit 1 Material](https://bytexl.app/content/3zeuvj5n3/python/3zh4wu3su/introduction-to-python/basic-data-types-and-variables) | [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zmhpqs5y/topic-a3-operators)          |
+| 4    |  Conditional Statements                           | [Unit 1 Material](https://bytexl.app/content/3zeuvj5n3/python/3zmz4fncs/control-flow/conditional-statements)| [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zmhpn74h/topic-a4-conditional-statements)          |
+| 5    | Iterative Statements  and Loops                       | [Unit 1 Material]()                                             | [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zn7n2z2v/topic-a4-1-iterative-statements)          |
+| 6    |  Lists                             | [Unit 1 Material]()                                             | [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zn7mmsuz/topic-a5-lists)          |
+| 7    |  Tuples                            | [Unit 1 Material]()                                             | [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zn7mt3dd/topic-a6-tuples)          |
+| 7    |  Sequences, Dictionaries                          | [Unit 1 Material]()                                             | [](https://bytexl.app/course-catalog-groups/3z7naufue/python/course-catalog/3zn8342mv/topic-a7-sequences-dictionaries)          |
 
 
 **EDA Hands-On** 
