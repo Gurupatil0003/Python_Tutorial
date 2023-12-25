@@ -183,7 +183,37 @@ print(p.city)
   
 <img width="100%" src="imgs/encapsulation_python_class.jpg"/>
 
--
+```python
+class Employee:
+    # constructor
+    def __init__(self, name, salary, project):
+        # data members
+        self.name = name
+        self.salary = salary
+        self.project = project
+
+    # method
+    # to display employee's details
+    def show(self):
+        # accessing public data member
+        print("Name: ", self.name, 'Salary:', self.salary)
+
+    # method
+    def work(self):
+        print(self.name, 'is working on', self.project)
+
+# creating object of a class
+emp = Employee('Jessa', 8000, 'NLP')
+
+# calling public method of the class
+emp.show()
+emp.work()
+```
+```python
+- Output
+Name:  Jessa Salary: 8000
+Jessa is working on NLP
+```
 <img width="100%" src="imgs/OOPEncapsulation.png"/>
 
 - **Abstraction.** Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. The derived class can have its functionality extended. This concept can help developers more easily make additional changes or additions over time.
