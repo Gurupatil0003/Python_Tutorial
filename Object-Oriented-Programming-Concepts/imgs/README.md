@@ -214,6 +214,163 @@ emp.work()
 Name:  Jessa Salary: 8000
 Jessa is working on NLP
 ```
+
+# Access Modifiers in Python
+Encapsulation can be achieved by declaring the data members and methods of a class either as private or protected. But In Python, we don’t have direct access modifiers like public, private, and protected. We can achieve this by using single underscore and double underscores.
+
+Access modifiers limit access to the variables and methods of a class. Python provides three types of access modifiers private, public, and protected.
+
+Public Member: Accessible anywhere from otside oclass.
+Private Member: Accessible within the class
+Protected Member: Accessible within the class and its sub-classes
+
+-**Public Member**
+Public data members are accessible within and outside of a class. All member variables of the class are by default public.
+```python
+class Employee:
+    # constructor
+    def __init__(self, name, salary):
+        # public data members
+        self.name = name
+        self.salary = salary
+
+    # public instance methods
+    def show(self):
+        # accessing public data member
+        print("Name: ", self.name, 'Salary:', self.salary)
+
+# creating object of a class
+emp = Employee('Jessa', 10000)
+
+# accessing public data members
+print("Name: ", emp.name, 'Salary:', emp.salary)
+
+# calling public method of the class
+emp.show()
+```
+```python
+Name:  Jessa Salary: 10000
+Name:  Jessa Salary: 10000
+```
+
+-**Private Member**
+We can protect variables in the class by marking them private. To define a private variable add two underscores as a prefix at the start of a variable name.
+
+Private members are accessible only within the class, and we can’t access them directly from the class objects.
+
+```python
+class Employee:
+    # constructor
+    def __init__(self, name, salary):
+        # public data member
+        self.name = name
+        # private member
+        self.__salary = salary
+
+# creating object of a class
+emp = Employee('Jessa', 10000)
+
+# accessing private data members
+print('Salary:', emp.__salary)
+
+-output
+AttributeError: 'Employee' object has no attribute '__salary'
+```
+
+```python
+
+class Employee:
+    # constructor
+    def __init__(self, name, salary):
+        # public data member
+        self.name = name
+        # private member
+        self.__salary = salary
+
+# creating object of a class
+emp = Employee('Jessa', 10000)
+
+print('Name:', emp.name)
+# direct access to private member using name mangling
+print('Salary:', emp._Employee__salary)
+
+-output
+Name: Jessa
+Salary: 10000
+```
+- **Protected Member.**
+Protected members are accessible within the class and also available to its sub-classes. To define a protected member, prefix the member name with a single underscore _.
+
+Protected data members are used when you implement inheritance and want to allow data members access to only child classes.
+```python
+# base class
+class Company:
+    def __init__(self):
+        # Protected member
+        self._project = "NLP"
+
+# child class
+class Employee(Company):
+    def __init__(self, name):
+        self.name = name
+        Company.__init__(self)
+
+    def show(self):
+        print("Employee name :", self.name)
+        # Accessing protected member in child class
+        print("Working on project :", self._project)
+
+c = Employee("Jessa")
+c.show()
+
+# Direct access protected data member
+print('Project:', c._project)
+
+-output
+Employee name : Jessa
+Working on project : NLP
+Project: NLP
+
+```
+-**Getters and Setters in Python**
+To implement proper encapsulation in Python, we need to use setters and getters. The primary purpose of using getters and setters in object-oriented programs is to ensure data encapsulation. Use the getter method to access data members and the setter methods to modify the data members.
+
+In Python, private variables are not hidden fields like in other programming languages. The getters and setters methods are often used when:
+
+When we want to avoid direct access to private variables
+To add validation logic for setting a value
+```python
+class Student:
+    def __init__(self, name, age):
+        # private member
+        self.name = name
+        self.__age = age
+
+    # getter method
+    def get_age(self):
+        return self.__age
+
+    # setter method
+    def set_age(self, age):
+        self.__age = age
+
+stud = Student('Jessa', 14)
+
+# retrieving age using getter
+print('Name:', stud.name, stud.get_age())
+
+# changing age using setter
+stud.set_age(16)
+
+# retrieving age using getter
+print('Name:', stud.name, stud.get_age())
+
+-Output
+Name: Jessa 14
+Name: Jessa 16
+```
+<img width="100%" src="imgs/python_data_hiding.jpg"/>
+
 <img width="100%" src="imgs/OOPEncapsulation.png"/>
 
 - **Abstraction.** Objects only reveal internal mechanisms that are relevant for the use of other objects, hiding any unnecessary implementation code. The derived class can have its functionality extended. This concept can help developers more easily make additional changes or additions over time.
