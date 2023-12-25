@@ -93,12 +93,12 @@ print(p)
 ```
 # Example 1: We can create an object by calling the class
 
-p = Person()
+```p = Person()
 print(p)
-
+```
 # Example 2: Creating Class and Object in Python
 
-class Student:
+```class Student:
     """This is student class with data"""    
     def learn(self):    # A sample method
         print("Welcome to Guranna Gouda's class on Python Programming")
