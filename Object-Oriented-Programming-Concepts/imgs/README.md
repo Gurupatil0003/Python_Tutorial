@@ -220,9 +220,9 @@ Encapsulation can be achieved by declaring the data members and methods of a cla
 
 Access modifiers limit access to the variables and methods of a class. Python provides three types of access modifiers private, public, and protected.
 
-Public Member: Accessible anywhere from otside oclass.
-Private Member: Accessible within the class
-Protected Member: Accessible within the class and its sub-classes
+-**Public Member:** Accessible anywhere from otside oclass.
+-**Private Member:** Accessible within the class
+-**Protected Member:** Accessible within the class and its sub-classes
 
 -**Public Member**
 Public data members are accessible within and outside of a class. All member variables of the class are by default public.
