@@ -93,19 +93,21 @@ print(p)
 ```
 # Example 1: We can create an object by calling the class
 
-```p = Person()
+```python
+p = Person()
 print(p)
 ```
 # Example 2: Creating Class and Object in Python
 
-```class Student:
+```python
+class Student:
     """This is student class with data"""    
     def learn(self):    # A sample method
         print("Welcome to Guranna Gouda's class on Python Programming")
 
 stud = Student()        # creating object
 stud.learn()            # Calling method
-
+```
 # Output: Welcome to Guranna Gouda's class on Python Programming
 
 #How to insert Value Using Construct
