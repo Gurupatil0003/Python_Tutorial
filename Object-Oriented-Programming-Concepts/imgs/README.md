@@ -108,9 +108,10 @@ class Student:
 stud = Student()        # creating object
 stud.learn()            # Calling method
 ```
-# Output: Welcome to Guranna Gouda's class on Python Programming
+### Output: Welcome to Guranna Gouda's class on Python Programming
 
 #How to insert Value Using Construct
+```python
 class Student:
     """This is student class with data"""    
     def __init__(self, name):
@@ -122,7 +123,7 @@ class Student:
 # Creating an object with a specified name
 stud = Student(name="Guru")
 stud.learn()
-
+```
 
 ## Class Constructor
 
@@ -130,6 +131,7 @@ In the examples above, we have created an object from the **`Person`** class. Ho
 
 The **`__init__()`**  method in Python is a special method, also known as the constructor, and it is automatically called when an object is created from a class. Its primary purpose is to initialize the attributes of the object.
 
+```python
 class Person:
       def __init__ (self, name):
         # self allows to attach parameter to the class
@@ -138,9 +140,9 @@ class Person:
 p = Person('Eren')
 print(p.name)
 print(p)
-
+```
 # Example 1: add more parameters to the constructor function.
-
+```python
 class Person:
       def __init__(self, firstname, lastname, age, country, city):
             self.firstname = firstname
@@ -155,13 +157,15 @@ print(p.lastname)
 print(p.age)
 print(p.country)
 print(p.city)
-
+```
+```python
 #output
 # Guru
 # Patil
 # 22
 # India
 # Bengaluru
+```
 <img width="100%" src="imgs/OOPObject.png"/>
 
 > here in this example class in animal and objects are dog,cat,cow,elephant
