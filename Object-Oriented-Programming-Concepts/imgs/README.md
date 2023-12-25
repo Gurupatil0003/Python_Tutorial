@@ -35,6 +35,32 @@
 - Class is created using the class keyword
 - Classes are used to create and manage new object and support inheritance 
 
+
+**Syntax:**
+
+```python
+class classname:
+    '''documentation string'''
+    class_suite
+```
+* **Documentation string:** represent a description of the class. It is optional.
+* **class_suite:** class suite contains component statements, variables, methods, functions, attributes.
+
+The example for class of parrot can be :
+
+```python
+class Parrot:
+    pass
+```
+
+Here, we use the **`class`** keyword to define an empty class **`Parrot`**. From class, we construct instances. An instance is a specific object created from a particular class.
+
+```python
+class Person:
+    pass
+print(Person)
+```
+
 <img width="100%" src="imgs/OOPClass.png"/>
 
 ## Object
