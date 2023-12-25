@@ -110,7 +110,7 @@ stud.learn()            # Calling method
 ```
 ### Output: Welcome to Guranna Gouda's class on Python Programming
 
-#How to insert Value Using Construct
+# How to insert Value Using Construct
 ```python
 class Student:
     """This is student class with data"""    
@@ -220,11 +220,11 @@ Encapsulation can be achieved by declaring the data members and methods of a cla
 
 Access modifiers limit access to the variables and methods of a class. Python provides three types of access modifiers private, public, and protected.
 
--**Public Member:** Accessible anywhere from otside oclass.
--**Private Member:** Accessible within the class
--**Protected Member:** Accessible within the class and its sub-classes
+- **Public Member:** Accessible anywhere from otside oclass.
+- **Private Member:** Accessible within the class
+- **Protected Member:** Accessible within the class and its sub-classes
 
--**Public Member**
+- **Public Member**
 Public data members are accessible within and outside of a class. All member variables of the class are by default public.
 ```python
 class Employee:
@@ -253,7 +253,7 @@ Name:  Jessa Salary: 10000
 Name:  Jessa Salary: 10000
 ```
 
--**Private Member**
+- **Private Member**
 We can protect variables in the class by marking them private. To define a private variable add two underscores as a prefix at the start of a variable name.
 
 Private members are accessible only within the class, and we can’t access them directly from the class objects.
@@ -332,7 +332,7 @@ Working on project : NLP
 Project: NLP
 
 ```
--**Getters and Setters in Python**
+- **Getters and Setters in Python**
 To implement proper encapsulation in Python, we need to use setters and getters. The primary purpose of using getters and setters in object-oriented programs is to ensure data encapsulation. Use the getter method to access data members and the setter methods to modify the data members.
 
 In Python, private variables are not hidden fields like in other programming languages. The getters and setters methods are often used when:
