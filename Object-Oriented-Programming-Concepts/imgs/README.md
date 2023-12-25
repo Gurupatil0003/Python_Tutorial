@@ -181,7 +181,7 @@ print(p.city)
 
 - **Encapsulation.** This principle states that all important information is contained inside an object and only select information is exposed. The implementation and state of each object are privately held inside a defined class. Other objects do not have access to this class or the authority to make changes. They are only able to call a list of public functions or methods. This characteristic of data hiding provides greater program security and avoids unintended data corruption.
   
-<img width="100%" src="imgs/Object-Oriented-Programming-Concepts/imgs/encapsulation_python_class.jpg"/>
+<img width="100%" src="imgs/encapsulation_python_class.jpg"/>
 
 -
 <img width="100%" src="imgs/OOPEncapsulation.png"/>
