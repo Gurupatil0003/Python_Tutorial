@@ -71,6 +71,95 @@ print(Person)
 - We can easily create multiple similar object and modify existing object 
 - Object in OOP's can include a data structure, a vartiable or function
 
+**Syntax:**
+
+```python
+reference_variable = classname()
+```
+
+The example for object of parrot class can be:
+
+```python
+obj = Parrot()
+```
+
+Here, **`obj`** is an **`object`** of class Parrot.
+
+Suppose we have details of parrots. Now, we are going to show how to build the class and objects of parrots.
+
+```python
+p = Person()
+print(p)
+```
+# Example 1: We can create an object by calling the class
+
+p = Person()
+print(p)
+
+# Example 2: Creating Class and Object in Python
+
+class Student:
+    """This is student class with data"""    
+    def learn(self):    # A sample method
+        print("Welcome to Guranna Gouda's class on Python Programming")
+
+stud = Student()        # creating object
+stud.learn()            # Calling method
+
+# Output: Welcome to Guranna Gouda's class on Python Programming
+
+#How to insert Value Using Construct
+class Student:
+    """This is student class with data"""    
+    def __init__(self, name):
+        self.name = name
+    
+    def learn(self):
+        print(f"Welcome, {self.name}, to Guranna Gouda's class on Python Programming")
+
+# Creating an object with a specified name
+stud = Student(name="Guru")
+stud.learn()
+
+
+## Class Constructor
+
+In the examples above, we have created an object from the **`Person`** class. However, a class without a constructor is not really useful in real applications. Let us use constructor function to make our class more useful. Like the constructor function in Java or JavaScript, Python has also a built-in **`__init__()`** constructor function. The **`__init__()`** constructor function has **`self`** parameter which is a reference to the current instance of the class.
+
+The **`__init__()`**  method in Python is a special method, also known as the constructor, and it is automatically called when an object is created from a class. Its primary purpose is to initialize the attributes of the object.
+
+class Person:
+      def __init__ (self, name):
+        # self allows to attach parameter to the class
+          self.name =name
+
+p = Person('Eren')
+print(p.name)
+print(p)
+
+# Example 1: add more parameters to the constructor function.
+
+class Person:
+      def __init__(self, firstname, lastname, age, country, city):
+            self.firstname = firstname
+            self.lastname = lastname
+            self.age = age
+            self.country = country
+            self.city = city
+
+p = Person('Guru', 'Patil', 22, 'India', 'Bengaluru')
+print(p.firstname)
+print(p.lastname)
+print(p.age)
+print(p.country)
+print(p.city)
+
+#output
+# Guru
+# Patil
+# 22
+# India
+# Bengaluru
 <img width="100%" src="imgs/OOPObject.png"/>
 
 > here in this example class in animal and objects are dog,cat,cow,elephant
