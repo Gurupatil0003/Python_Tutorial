@@ -1,5 +1,5 @@
 # Assignment For Student
-## 1.Assignment 1
+## 1.  Assignment 1
 
 |Sl No|Project Name|
 |---|---|
@@ -7,7 +7,7 @@
 
 Hint:-Use Flask Frame Work With Python
 
-## Assignment 2
+## 2.  Assignment 2
 |Sl No|Project Name|
 |---|---|
 |1|Blogging platform|
