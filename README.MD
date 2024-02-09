@@ -56,8 +56,10 @@
 ## 1.Assignment 1
 
 |Sl No|Project Name|
-|1| Create Ur Own Portfolio|
+|---|---|
+|1|Create ur Own Portfolio|
 
+Hint:-Use Flask Frame Work With Python
 
 ## Assignment 2
 |Sl No|Project Name|
