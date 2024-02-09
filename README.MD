@@ -59,8 +59,6 @@
 |1| Create Ur Own Portfolio|
 
 
-Hint :-Flask Frame Work For Backend Process:-Flask,Sqlite or Mysql or Any Database and Frontend process use:Html,Css
-
 ## Assignment 2
 |Sl No|Project Name|
 |---|---|
