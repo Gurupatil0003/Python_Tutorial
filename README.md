@@ -8,7 +8,7 @@
 Hint:-Use Flask Frame Work With Python
 
 ## 2.  Assignment 2
-|Sl No|Project Name|
+|Roll Numbers|Project Name|
 |---|---|
 |1|Blogging platform|
 |2|To-do list application|
@@ -37,7 +37,7 @@ Hint:-Use Flask Frame Work With Python
 |25|Movie Recommendation System|
 |26|StudyAssistant|
 |27|StudentHub|
-|28|CampusConnect|
+|28|CampusConnect|n
 |29|StudyGroup|
 |30|StudyAssistant|
 |31|StudyPlanner|
