@@ -7,7 +7,9 @@ Enter value of a = 7
 Enter value of b = 5
 
 
-Expected output 
-Sum is = 12
-Sub is = 2
-Multiplication is = 35
+|Expected output |
+| Operation         | Result |
+|-------------------|--------|
+| Sum               | 12     |
+| Subtraction       | 2      |
+| Multiplication    | 35     |
