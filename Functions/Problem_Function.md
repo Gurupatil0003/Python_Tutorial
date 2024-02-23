@@ -56,12 +56,12 @@ detail(roll)
 
 Hint
 Input:
-Value of a = 30
-Value of b = 22
-value of c = 18
+- Value of a = 30
+- Value of b = 22
+- value of c = 18
 
 Expected output 
-30 is the maximum among all
+- 30 is the maximum among all
 
 
 ## Sollution
@@ -81,17 +81,17 @@ max(30,22,18)
 
 Hint
 Input:
-Enter a number = 4
+- Enter a number = 4
 
 Expected output 
-4 is an even number
+- 4 is an even number
 
 Hint
 Input:
-Enter a number = 5
+- Enter a number = 5
 
 Expected output 
-4 is an odd number
+- 4 is an odd number
 ## Solution 
 ```python
 
@@ -106,11 +106,11 @@ func(4)
 # Exercise 5: Define a function which counts vowels and consonant in a word.
 Hint
 Input:
-Enter a word = pythonlobby
+- Enter a word = pythonlobby
 
-Expected output 
-Count of vowel is = 2
-Count of consonant is = 9
+- Expected output 
+- Count of vowel is = 2
+- Count of consonant is = 9
 
 ## Solution
 ```python
@@ -133,10 +133,10 @@ count(x)
 # Exercise 6: Define a function that returns Factorial of a number.
 Hint
 Input:
-Enter a number = 6
+- Enter a number = 6
 
 Expected output 
-Factorial is 720
+- Factorial is 720
 ```python
 
 # Solution
@@ -153,10 +153,10 @@ factorial(num)
 # Exercise 7: Define a function that accepts lowercase words and returns uppercase words.
 Hint
 Input:
-Enter a word = pythonlobby
+- Enter a word = pythonlobby
 
 Expected output 
-Result is = PYTHONLOBBY
+- Result is = PYTHONLOBBY
 ```python
 
 # Solution
