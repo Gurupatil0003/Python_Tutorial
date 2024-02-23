@@ -31,10 +31,10 @@ result(a,b)
 # Exercise 2: Define a function that accepts roll number and returns whether the student is present or absent. 
 
 ## Hint
-Use a list to store sample roll. no.
-Get input from a user and check if the number
-exist in the list or not, if exists return present
-else return absent
+- Use a list to store sample roll. no.
+- Get input from a user and check if the number
+- exist in the list or not, if exists return present
+- else return absent
 
 ## solution
 ```python
