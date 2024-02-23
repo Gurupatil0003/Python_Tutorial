@@ -7,7 +7,7 @@ Enter value of a = 7
 Enter value of b = 5
 
 
-|Expected output |
+|Expected output |           |
 | Operation         | Result |
 |-------------------|--------|
 | Sum               | 12     |
