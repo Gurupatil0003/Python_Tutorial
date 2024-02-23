@@ -17,6 +17,7 @@ Enter value of b = 5
 
 
 # solution
+```python
 def result(a, b):
     sum = a+b
     sub = a-b
@@ -26,7 +27,7 @@ def result(a, b):
 a = int(input("Enter value of a: "))  # 7
 b = int(input("Enter value of b: "))  # 5
 result(a,b)
-
+```
 # Exercise 2: Define a function that accepts roll number and returns whether the student is present or absent. 
 
 ## Hint
