@@ -37,6 +37,7 @@ exist in the list or not, if exists return present
 else return absent
 
 ## solution
+```python
 def detail(roll):
     x = [23,43,22,56]
     if roll in x:
@@ -48,6 +49,8 @@ detail(roll)
 
 # output
 # Roll number 24 is absent
+```
+
 
 # Exercise 3: Define a function in python that accepts 3 values and returns the maximum of three numbers.
 
@@ -62,7 +65,7 @@ Expected output
 
 
 ## Sollution
-
+```python
 def max(a, b, c):
     if a > b and a > c:
         print(f"{a} is maximum among all")
@@ -72,6 +75,7 @@ def max(a, b, c):
         print(f"{c} is maximum among all")
 
 max(30,22,18)
+```
 
 # Exercise 4: Define a function that accepts a number and returns whether the number is even or odd.
 
@@ -89,6 +93,7 @@ Enter a number = 5
 Expected output 
 4 is an odd number
 ## Solution 
+```python
 
 def func(x):
     if x % 2 == 0:
@@ -97,7 +102,7 @@ def func(x):
         print(f"{x} is Odd number")
 x = int(input("Enter a number "))
 func(4)
-
+```
 # Exercise 5: Define a function which counts vowels and consonant in a word.
 Hint
 Input:
@@ -108,6 +113,8 @@ Count of vowel is = 2
 Count of consonant is = 9
 
 ## Solution
+```python
+
 def count(val):
     vov = 0
     con = 0
@@ -122,7 +129,7 @@ def count(val):
 
 x = input("Enter Value: ") # pythonlobby
 count(x)
-
+```
 # Exercise 6: Define a function that returns Factorial of a number.
 Hint
 Input:
@@ -130,6 +137,7 @@ Enter a number = 6
 
 Expected output 
 Factorial is 720
+```python
 
 # Solution
 def factorial(num):
@@ -141,7 +149,7 @@ def factorial(num):
 
 num = int(input("Enter number "))
 factorial(num)
-
+```
 # Exercise 7: Define a function that accepts lowercase words and returns uppercase words.
 Hint
 Input:
@@ -149,6 +157,7 @@ Enter a word = pythonlobby
 
 Expected output 
 Result is = PYTHONLOBBY
+```python
 
 # Solution
 def response(text):
@@ -157,8 +166,11 @@ def response(text):
 
 text = input("Enter String: ")  # pythonlobby
 response(text)
-
+```
 # 8. Write a program which can map() to make a list whose elements are cube of elements in a given list
+
+```python
+
 def cube(lst):
     """
     Returns the list of cubes of given number
@@ -166,10 +178,15 @@ def cube(lst):
     return list(map(lambda x: x**3, lst))
 
 cube([1, 3, 5, 9, 15])
+```
 
-# 1: Suggest Footwear
+
+# 9: Suggest Footwear
 # Write a program that will give suggested footwear based on the weather.
 # Ask the user for the weather outside with three options (sunny, rainy, or snowy) and give the correct footwear suggestion (sneaker, gumboot, or boots). Each # # # option should be written as its own function that prints a message based on the input.
+
+```python
+
 def sunny():
     print("It is sunny day, good to wear sneaker!")
  
@@ -189,9 +206,14 @@ elif weather_today == "snowy":
 else:
     print(f"No footwear avaibale for {weather_today}")
 
+```
 
 # My Favorite Book
-# Write a function called favorite_book() that accepts two parameter, title and author. The function should print a message, such as The History of Bhutan by Karma # Phuntsho. Call the function, make sure to include a book title and author as an argument in the function call.    
+# Write a function called favorite_book() that accepts two parameter, title and author. The function should print a message, such as The History of Bhutan by Karma # Phuntsho. Call the function, make sure to include a book title and author as an argument in the function call.
+
+```python
+
 def favorite_book(title, author):
    print(f"{title} was written by {author}")
 favorite_book("The History of Bhutan", "Karma Phuntsho")
+```
