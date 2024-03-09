@@ -1,4 +1,4 @@
-# Object Oriebted Programming Concepts
+# Object Oriented Programming Concepts
 
 ## OOP/OOPs (object oriented programming system) 
 
