@@ -1,5 +1,4 @@
 # Object Oriebted Programming Concepts
-- <img src="https://github.com/SP-XD/SP-XD/blob/main/images/letterbox.gif?raw=true" width="25"/> [![Be the Hero of Your Own Story](https://img.shields.io/badge/-Be%20the%20Hero%20of%20Your%20Own%20Story-c14438?style=flat-square&logo=Gmail&logoColor=white)]
 
 ## OOP/OOPs (object oriented programming system) 
 
