@@ -4,7 +4,7 @@
 # Python Full Stack Development.
 
 
-## **🎓 Course Information**
+## **🎓 Course Information** 
 
 - **Subject Code** : 
 - **Faculty**: Mr Guranna Gouda  (Assistant Professor)
