@@ -138,7 +138,7 @@ Hint:-Use Flask Frame Work With Python
 |72|Personal Development Planner|
 
 ## List Operations:
-- 1. Given a list of numbers, find the sum of all the elements.
+- 1.Given a list of numbers, find the sum of all the elements.
 - 2.Remove duplicates from a list.
 - 3.Sort a list of strings in alphabetical order.
 - 4.Given two lists, find common elements between them.
