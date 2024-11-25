@@ -6,6 +6,14 @@
 
 ## **🎓 Course Information** 
 
+Current One Divisions
+- **Subject Code** : 
+- **Faculty**: Mr Guranna Gouda  (Assistant Professor)
+- **Semester**: 4
+- **Year**: 2024
+- **Divisions** (under direct tutelage): 4B8,4B9,4B10
+
+Old Divisions
 - **Subject Code** : 
 - **Faculty**: Mr Guranna Gouda  (Assistant Professor)
 - **Semester**: 4
