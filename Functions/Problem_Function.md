@@ -217,3 +217,4 @@ def favorite_book(title, author):
    print(f"{title} was written by {author}")
 favorite_book("The History of Bhutan", "Karma Phuntsho")
 ```
+https://colab.research.google.com/github/Tanu-N-Prabhu/Python/blob/master/Python_Lambda_Function.ipynb
