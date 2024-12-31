@@ -13,3 +13,22 @@ if length > 0:
 else:
     print("Invalid password length. Please enter a positive integer.")
 ~~~
+
+~~~python
+
+import pandas as pd
+
+# Define a function to display the entire table (DataFrame) from the CSV file
+def display_table(file_path):
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(file_path)
+    
+    # Display the entire DataFrame (table)
+    print("The entire table:")
+    print(df)
+
+# Example usage
+file_path = "your_file.csv"  # Replace with the path to your CSV file
+display_table(file_path)
+
+~~~
