@@ -32,3 +32,28 @@ file_path = "your_file.csv"  # Replace with the path to your CSV file
 display_table(file_path)
 
 ~~~
+
+~~~python
+import pandas as pd
+
+# Define a function to calculate the mean of a specified column
+def calculate_mean(file_path, column_name):
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(file_path)
+    
+    # Check if the column exists in the DataFrame
+    if column_name in df.columns:
+        # Calculate and return the mean of the specified column
+        return df[column_name].mean()
+    else:
+        # Return a message if the column doesn't exist
+        return f"Column '{column_name}' not found in the file."
+
+# Example usage
+file_path = "your_file.csv"  # Replace with the path to your CSV file
+column_name = "Specified column"  # Replace with your column name
+mean_value = calculate_mean(file_path, column_name)
+
+print(mean_value)
+
+~~~
