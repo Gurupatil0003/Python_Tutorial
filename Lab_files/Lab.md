@@ -57,3 +57,39 @@ mean_value = calculate_mean(file_path, column_name)
 print(mean_value)
 
 ~~~
+
+```python
+class Person:
+    def __init__(self, name, role, detail):
+        self.name = name
+        self.role = role
+        self.detail = detail
+
+    def get_details(self):
+        return f"{self.role} Name: {self.name}, {self.detail}"
+
+class Course:
+    def __init__(self, name, teacher):
+        self.name = name
+        self.teacher = teacher
+        self.students = []
+
+    def enroll_student(self, student):
+        self.students.append(student)
+
+    def list_students(self):
+        return [student.name for student in self.students]
+
+# Example usage:
+student = Person("Sad", "Student", "Grade: 10")
+teacher = Person("The Creator:-God", "Teacher", "Subject: Love and Peace")
+
+course = Course("Love and Peace", teacher)
+course.enroll_student(student)
+
+# Print details
+print(student.get_details())
+print(f"Enrolled in {course.name} taught by {teacher.name}")
+
+
+```
