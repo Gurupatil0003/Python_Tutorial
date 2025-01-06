@@ -81,15 +81,16 @@ class Course:
         return [student.name for student in self.students]
 
 # Example usage:
-student = Person("Sad", "Student", "Grade: 10")
-teacher = Person("The Creator:-God", "Teacher", "Subject: Love and Peace")
+student = Person("John", "Student", "Grade: 10")
+teacher = Person("Guru Sir", "Teacher", "Subject: Python")
 
-course = Course("Love and Peace", teacher)
+course = Course("Python Programming", teacher)
 course.enroll_student(student)
 
 # Print details
 print(student.get_details())
 print(f"Enrolled in {course.name} taught by {teacher.name}")
+
 
 
 ```
