@@ -842,9 +842,45 @@ We will create a package called `mypackage` with two modules:
 
 ### Folder Structure:
 
-mypackage/            <- Package directory
-    __init__.py        <- Initialization file
-    math_operations.py <- Module 1
+mypackage/              <- Package directory
+    __init__.py          <- Initialization file
+    math_operations.py   <- Module 1
     string_operations.py <- Module 2
-example.py            <- Program that uses the package
-setup.py
+example.py              <- Program that uses the package
+setup.py                <- Setup script for packaging and installation
+
+
+
+### Explanation:
+
+1. **mypackage/**: 
+   - This is the directory that contains all the files for your custom Python package. It includes your modules and an `__init__.py` file, which is required to treat the directory as a package.
+
+2. **`__init__.py`**:
+   - The `__init__.py` file is used to mark the directory as a package. It can be empty or contain package-level initialization code.
+
+3. **`math_operations.py`**:
+   - This is the first module of the package that contains functions related to basic math operations, such as `add` and `subtract`.
+
+4. **`string_operations.py`**:
+   - The second module of the package, which contains functions related to string operations, such as `concatenate`.
+
+5. **`example.py`**:
+   - A Python script that imports and uses the custom package `mypackage`. It demonstrates how to use the functions defined in the package's modules.
+
+6. **`setup.py`**:
+   - This is the script used for packaging and distribution. It defines the metadata and configuration for your package, making it easier to distribute and install.
+
+---
+
+### Example `setup.py` file:
+
+```python
+from setuptools import setup, find_packages
+
+setup(
+    name="mypackage",            # Name of your package
+    version="0.1",               # Version number
+    packages=find_packages(),    # Automatically find and include all packages
+)
+
