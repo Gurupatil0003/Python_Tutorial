@@ -390,4 +390,80 @@ The cat meows
 The cow moos
 
 ```
+## 7.Describe the differences between lists, sets, tuples, and dictionaries in Python. Provide
+  an example for each. 
 ![image](https://github.com/user-attachments/assets/fddf927e-3b53-4c9c-a39f-6a928309892e)
+
+# 8.Explain the significance of the with statement in Python for file handling. Provide an
+ example.
+
+# The Significance of the `with` Statement in Python for File Handling
+
+The **`with`** statement in Python is used to wrap the execution of a block of code. It simplifies exception handling and resource management, particularly when dealing with file operations. The **`with`** statement is often referred to as a **context manager** and ensures that resources are properly cleaned up after use, even in the event of an error.
+
+When working with files, it is important to close the file after it has been used to free up system resources. The **`with`** statement automatically takes care of closing the file once the block of code is executed, eliminating the need to explicitly call `file.close()`.
+
+### Significance of `with`:
+- **Automatic Resource Management**: It ensures that the file is closed automatically after the block is executed, even if an exception is raised.
+- **Cleaner Code**: It reduces the need for explicit `try`-`finally` blocks to close files, making the code more concise and readable.
+- **Error Handling**: It manages exceptions gracefully, ensuring that resources are cleaned up even if an error occurs.
+
+### Example Code:
+
+```python
+# Using 'with' for file handling
+file_name = "example.txt"
+
+# Writing to a file using the 'with' statement
+with open(file_name, 'w') as file:
+    file.write("Hello, world!\nThis is a file handling example.")
+
+# Reading from a file using the 'with' statement
+with open(file_name, 'r') as file:
+    content = file.read()
+    print(content)
+
+```
+# 9.Describe how the try, except, and finally blocks are used in Python to handle exceptions
+ with an example.
+
+In Python, exceptions are events that can disrupt the normal flow of a program. Exception handling allows you to gracefully handle errors and maintain control over program execution. The `try`, `except`, and `finally` blocks are used together to catch exceptions and perform necessary cleanup actions.
+
+### Key Concepts:
+- **`try` Block**: The code that may raise an exception is placed inside the `try` block.
+- **`except` Block**: If an exception is raised inside the `try` block, the code inside the `except` block is executed to handle the exception.
+- **`finally` Block**: This block is always executed, regardless of whether an exception occurred or not. It is typically used for cleanup operations (e.g., closing files or releasing resources).
+
+### Syntax:
+```python
+try:
+    # Code that may cause an exception
+    pass
+except <ExceptionType> as e:
+    # Code to handle the exception
+    pass
+finally:
+    # Code that always executes (cleanup actions)
+    pass
+```
+
+# Example
+```python
+try:
+    # Attempting to divide by zero
+    num1 = 10
+    num2 = 0
+    result = num1 / num2
+except ZeroDivisionError as e:
+    print(f"Error: {e}")
+finally:
+    print("This will always execute.")
+
+```
+# Output
+```python
+Error: division by zero
+This will always execute.
+
+```
+
