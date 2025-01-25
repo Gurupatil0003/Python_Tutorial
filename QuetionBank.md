@@ -467,3 +467,192 @@ This will always execute.
 
 ```
 
+# 1.Write a Python program that demonstrates the use of classes and objects.
+
+```python
+# Python Program: Demonstrating Classes and Objects
+
+In this example, we will create a `Car` class that represents a car. We will use objects to represent individual cars and demonstrate how to interact with their attributes and methods.
+
+## Code
+
+```python
+# Define a class called Car
+class Car:
+    # Constructor to initialize the car's attributes
+    def __init__(self, make, model, year):
+        self.make = make  # Brand of the car
+        self.model = model  # Model of the car
+        self.year = year  # Year of manufacture
+        self.mileage = 0  # Initial mileage is set to 0
+
+    # Method to display car information
+    def display_info(self):
+        print(f"{self.year} {self.make} {self.model}")
+        print(f"Mileage: {self.mileage} miles")
+
+    # Method to drive the car and increase its mileage
+    def drive(self, miles):
+        self.mileage += miles
+        print(f"The car has been driven for {miles} miles.")
+
+# Create an object of the Car class
+my_car = Car("Toyota", "Corolla", 2020)
+
+# Display information about the car
+my_car.display_info()
+
+# Drive the car for 100 miles
+my_car.drive(100)
+
+# Display updated information about the car
+my_car.display_info()
+
+
+```
+# What are Python dictionaries? Explain their features and demonstrate how to add, 
+ update, and delete items from a dictionary
+
+A **dictionary** in Python is a collection of unordered, changeable, and indexed items. It is used to store data in key-value pairs, where each key is unique. Dictionaries are defined using curly braces `{}`, with keys and values separated by a colon.
+
+## Features of Python Dictionaries
+
+1. **Unordered**: Dictionaries do not maintain any order of elements.
+2. **Changeable**: You can add, update, or remove items after the dictionary is created.
+3. **Indexed by Keys**: Items are accessed by unique keys, not by numerical index like in lists.
+4. **No Duplicate Keys**: Each key in a dictionary must be unique.
+5. **Mutable**: Dictionaries are mutable, meaning their contents can be changed.
+
+## Example: Creating and Using a Dictionary
+
+### Code Example
+
+```python
+# Creating a dictionary
+my_dict = {
+    'name': 'John',
+    'age': 25,
+    'city': 'New York'
+}
+
+# Display the dictionary
+print("Initial dictionary:", my_dict)
+
+# Adding items to the dictionary
+my_dict['email'] = 'john@example.com'  # Add a new key-value pair
+print("Dictionary after adding an item:", my_dict)
+
+# Updating an existing item
+my_dict['age'] = 26  # Update the value of 'age'
+print("Dictionary after updating 'age':", my_dict)
+
+# Deleting an item
+del my_dict['city']  # Remove the key 'city'
+print("Dictionary after deleting 'city':", my_dict)
+
+# Using the pop() method to remove and return a specific item
+removed_item = my_dict.pop('email')  # Remove 'email' and store its value
+print("Removed item:", removed_item)
+print("Dictionary after pop operation:", my_dict)
+
+# Using the clear() method to remove all items
+my_dict.clear()  # Removes all items from the dictionary
+print("Dictionary after clear:", my_dict)
+```
+# What are Access Specifiers in Python?
+
+Access specifiers (also known as access modifiers) are used to define the visibility and accessibility of class members (attributes and methods) in Python. They control how the members of a class can be accessed from outside the class.
+
+Python provides three types of access specifiers:
+
+1. **Public**
+2. **Protected**
+3. **Private**
+
+## 1. Public Access Specifier
+
+- **Public members** can be accessed from anywhere, both inside and outside the class.
+- By default, all members (attributes and methods) are public in Python if no access modifier is specified.
+
+### Example:
+
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make  # Public attribute
+        self.model = model  # Public attribute
+
+    def display_info(self):  # Public method
+        print(f"Car: {self.make} {self.model}")
+
+# Creating an object
+car = Car("Toyota", "Corolla")
+car.display_info()  # Accessing public method
+print(car.make)  # Accessing public attribute
+```
+# output
+```python
+Car: Toyota Corolla
+Toyota
+
+```
+
+## Protected Access Specifier
+
+- **Protected members** are intended to be used only within the class and its subclasses.
+- In Python, a protected member is indicated by a single underscore (`_`) before the attribute or method name.
+- Protected members are not strictly enforced in Python, and this is just a convention to indicate that they should not be accessed directly from outside the class. It is a way of telling other developers that these members are internal to the class and should not be accessed directly.
+
+### Example:
+
+```python
+class Car:
+    def __init__(self, make, model):
+        self._make = make  # Protected attribute
+        self._model = model  # Protected attribute
+
+    def _display_info(self):  # Protected method
+        print(f"Car: {self._make} {self._model}")
+
+# Creating an object
+car = Car("Toyota", "Corolla")
+car._display_info()  # Accessing protected method (not recommended)
+print(car._make)  # Accessing protected attribute (not recommended)
+
+```
+
+# Output
+```python
+Car: Toyota Corolla
+Toyota
+
+```
+## Private Access Specifier
+
+- **Private members** can only be accessed within the class they are defined. They cannot be accessed directly from outside the class.
+- In Python, a private member is indicated by a double underscore (`__`) before the attribute or method name.
+- Private members are **name-mangled**, which means their names are internally changed to include the class name. This makes it harder (but not impossible) to access them from outside the class.
+
+### Example:
+
+```
+class Employee:
+    # constructor
+    def __init__(self, name, salary):
+        # public data member
+        self.name = name
+        # private member
+        self.__salary = salary
+
+# creating object of a class
+emp = Employee('Jessa', 10000)
+
+print('Name:', emp.name)
+# direct access to private member using name mangling
+print('Salary:', emp._Employee__salary)
+```
+# output
+```python
+Name: Jessa
+Salary: 10000
+```
