@@ -841,15 +841,14 @@ We will create a package called `mypackage` with two modules:
 2. `string_operations.py` – This module will contain a function to concatenate strings.
 
 ### Folder Structure:
-
+```python
 mypackage/              <- Package directory
     __init__.py          <- Initialization file
     math_operations.py   <- Module 1
     string_operations.py <- Module 2
 example.py              <- Program that uses the package
 setup.py                <- Setup script for packaging and installation
-
-
+```
 
 ### Explanation:
 
