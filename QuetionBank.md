@@ -656,3 +656,195 @@ print('Salary:', emp._Employee__salary)
 Name: Jessa
 Salary: 10000
 ```
+
+# Write a python program that takes an integer argument and print the table of that 
+ integer. Display input error if input value is 0 or –ve.
+```python
+# Function to print the multiplication table
+def print_table(num):
+    # Check if the number is 0 or negative
+    if num <= 0:
+        print("Input Error: Please enter a positive integer greater than 0.")
+        return
+    
+    # Print the table of the number
+    print(f"Multiplication Table of {num}:")
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num * i}")
+
+# Take input from the user
+try:
+    number = int(input("Enter an integer: "))
+    print_table(number)
+except ValueError:
+    print("Input Error: Please enter a valid integer.")
+```
+# output
+```python
+Enter an integer: 5
+Multiplication Table of 5:
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+```
+
+```python
+Enter an integer: -3
+Input Error: Please enter a positive integer greater than 0.
+
+```
+
+# Describe how to open, read, and write to a file in Python. Provide a program example that writes a string to a text file and then reads the content
+
+Python provides built-in functions to handle files. You can open, read, write, and close files using Python's built-in `open()` function and file methods.
+
+## Opening a File
+
+You can open a file using the `open()` function. This function requires at least one argument: the name of the file you want to open. Additionally, you can specify the mode in which the file should be opened.
+
+### Modes for opening a file:
+- **'r'** – Read (default). Opens the file for reading.
+- **'w'** – Write. Opens the file for writing (creates a new file or overwrites an existing one).
+- **'a'** – Append. Opens the file for appending new content at the end.
+- **'r+'** – Read/Write. Opens the file for both reading and writing.
+
+## Writing to a File
+
+To write to a file, you must open it in write (`'w'`) or append (`'a'`) mode. The `write()` method writes a string to the file.
+
+## Reading from a File
+
+To read from a file, open it in read (`'r'`) or read/write (`'r+'`) mode. You can use methods like `read()`, `readline()`, or `readlines()` to fetch data.
+
+## Example Program
+
+The following example demonstrates how to write a string to a text file and then read its contents:
+
+### Code Example:
+
+```python
+# Step 1: Write to a file
+file_name = "example.txt"
+content_to_write = "Hello, this is a test message written to a file."
+
+# Open the file in write mode ('w') and write the content
+with open(file_name, 'w') as file:
+    file.write(content_to_write)
+
+print(f"Content has been written to {file_name}.")
+
+# Step 2: Read from the file
+with open(file_name, 'r') as file:
+    content_read = file.read()  # Read the entire content of the file
+
+print(f"Content read from {file_name}:")
+print(content_read)
+```
+
+# Write a Python program to connect to a MySQL database, create a table, insert data into it, and fetch the data. Explain each step of the process
+```python
+import mysql.connector
+
+# Step 1: Connect to MySQL Database
+try:
+    # Establish connection to MySQL database
+    connection = mysql.connector.connect(
+        host='localhost',       # MySQL server address (localhost for local server)
+        user='root',            # MySQL username
+        password='yourpassword',# MySQL password (replace with your password)
+        database='test_db'      # The database to use
+    )
+
+    if connection.is_connected():
+        print("Connected to the database")
+
+        # Step 2: Create a Cursor object using the connection
+        cursor = connection.cursor()
+
+        # Step 3: Create a table
+        create_table_query = '''
+        CREATE TABLE IF NOT EXISTS Employees (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            name VARCHAR(100),
+            age INT,
+            position VARCHAR(100)
+        )
+        '''
+        cursor.execute(create_table_query)
+        print("Table 'Employees' created successfully (if not exists)")
+
+        # Step 4: Insert data into the table
+        insert_query = "INSERT INTO Employees (name, age, position) VALUES (%s, %s, %s)"
+        data_to_insert = [
+            ("John Doe", 28, "Software Engineer"),
+            ("Jane Smith", 34, "Data Scientist"),
+            ("Robert Brown", 25, "Product Manager")
+        ]
+        cursor.executemany(insert_query, data_to_insert)
+        connection.commit()  # Commit the transaction
+        print(f"{cursor.rowcount} rows inserted into the 'Employees' table.")
+
+        # Step 5: Fetch data from the table
+        cursor.execute("SELECT * FROM Employees")
+        result = cursor.fetchall()
+        
+        print("\nFetched Data:")
+        for row in result:
+            print(row)
+
+except mysql.connector.Error as err:
+    print(f"Error: {err}")
+finally:
+    # Close the cursor and connection
+    if connection.is_connected():
+        cursor.close()
+        connection.close()
+        print("\nMySQL connection closed.")
+```
+
+# Output
+```
+Connected to the database
+Table 'Employees' created successfully (if not exists)
+3 rows inserted into the 'Employees' table.
+
+Fetched Data:
+(1, 'John Doe', 28, 'Software Engineer')
+(2, 'Jane Smith', 34, 'Data Scientist')
+(3, 'Robert Brown', 25, 'Product Manager')
+
+MySQL connection closed.
+```
+
+# Creating and Using a Custom Python Package in Python
+
+A **Python package** is a way to organize related Python modules into a directory hierarchy. A package is essentially a folder containing Python files and an `__init__.py` file. The `__init__.py` file makes Python treat the directory as a package and can contain initialization code if needed.
+
+### Steps to Create a Custom Python Package
+
+1. **Create the Package Directory**: This directory will hold the Python modules and the `__init__.py` file.
+2. **Create Python Modules**: Each `.py` file will contain functions, classes, or variables that belong to the package.
+3. **Create the `__init__.py` File**: This file allows Python to treat the directory as a package. It can be empty or contain package-level initialization code.
+4. **Import and Use the Package**: Import the modules from your package and use them in a Python program.
+
+### Example: Creating a Custom Python Package
+
+We will create a package called `mypackage` with two modules:
+1. `math_operations.py` – This module will contain functions for addition and subtraction.
+2. `string_operations.py` – This module will contain a function to concatenate strings.
+
+### Folder Structure:
+
+mypackage/            <- Package directory
+    __init__.py        <- Initialization file
+    math_operations.py <- Module 1
+    string_operations.py <- Module 2
+example.py            <- Program that uses the package
+setup.py
