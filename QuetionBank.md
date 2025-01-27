@@ -93,7 +93,7 @@ finally:
 
 # Python Full Stack Development - Concepts
 
-## 7. Data Types in Python
+## 7. Write a short note on data types in python.
 
 Python provides several built-in data types, which are classified into mutable and immutable types.
 
@@ -250,11 +250,12 @@ Inheritance is a fundamental concept in Object-Oriented Programming (OOP) that a
 
 There are several types of inheritance in Python:
 
-1. **Single Inheritance**
-2. **Multiple Inheritance**
-3. **Multilevel Inheritance**
-4. **Hierarchical Inheritance**
-5. **Hybrid Inheritance**
+1. **Single Inheritance** ---Explain this all with proper example Dont forgot
+2. **Multiple Inheritance** ---Explain this all with proper example Dont forgot
+3. **Multilevel Inheritance** ---Explain this all with proper example Dont forgot
+4. **Hierarchical Inheritance** ---Explain this all with proper example Dont forgot
+5. **Hybrid Inheritance** ---Explain this all with proper example Dont forgot
+
 
 ## 3. Python's File Handling Mechanism
 
@@ -554,7 +555,7 @@ my_car.display_info()
 
 
 ```
-# What are Python dictionaries? Explain their features and demonstrate how to add, 
+# 2.What are Python dictionaries? Explain their features and demonstrate how to add, 
  update, and delete items from a dictionary
 
 A **dictionary** in Python is a collection of unordered, changeable, and indexed items. It is used to store data in key-value pairs, where each key is unique. Dictionaries are defined using curly braces `{}`, with keys and values separated by a colon.
@@ -603,7 +604,7 @@ print("Dictionary after pop operation:", my_dict)
 my_dict.clear()  # Removes all items from the dictionary
 print("Dictionary after clear:", my_dict)
 ```
-# What are Access Specifiers in Python?
+# 3. What are Access Specifiers in Python?
 
 Access specifiers (also known as access modifiers) are used to define the visibility and accessibility of class members (attributes and methods) in Python. They control how the members of a class can be accessed from outside the class.
 
@@ -701,8 +702,7 @@ Name: Jessa
 Salary: 10000
 ```
 
-# Write a python program that takes an integer argument and print the table of that 
- integer. Display input error if input value is 0 or –ve.
+# 4. Write a python program that takes an integer argument and print the table of that integer. Display input error if input value is 0 or –ve.
 ```python
 # Function to print the multiplication table
 def print_table(num):
@@ -745,7 +745,7 @@ Input Error: Please enter a positive integer greater than 0.
 
 ```
 
-# Describe how to open, read, and write to a file in Python. Provide a program example that writes a string to a text file and then reads the content
+# 5. Describe how to open, read, and write to a file in Python. Provide a program example that writes a string to a text file and then reads the content
 
 Python provides built-in functions to handle files. You can open, read, write, and close files using Python's built-in `open()` function and file methods.
 
@@ -792,7 +792,7 @@ print(f"Content read from {file_name}:")
 print(content_read)
 ```
 
-# Write a Python program to connect to a MySQL database, create a table, insert data into it, and fetch the data. Explain each step of the process
+# 6. Write a Python program to connect to a MySQL database, create a table, insert data into it, and fetch the data. Explain each step of the process
 ```python
 import mysql.connector
 
@@ -867,7 +867,7 @@ Fetched Data:
 MySQL connection closed.
 ```
 
-# Creating and Using a Custom Python Package in Python
+# 7. Creating and Using a Custom Python Package in Python
 
 A **Python package** is a way to organize related Python modules into a directory hierarchy. A package is essentially a folder containing Python files and an `__init__.py` file. The `__init__.py` file makes Python treat the directory as a package and can contain initialization code if needed.
 
@@ -892,6 +892,40 @@ mypackage/              <- Package directory
     string_operations.py <- Module 2
 example.py              <- Program that uses the package
 setup.py                <- Setup script for packaging and installation
+```
+```python
+# mypackage/math_operations.py
+
+def add(a, b): return a + b
+def subtract(a, b): return a - b
+def multiply(a, b): return a * b
+def divide(a, b): 
+    if b == 0: raise ValueError("Cannot divide by zero")
+    return a / b
+
+```
+
+```python
+# mypackage/string_operations.py
+
+def concatenate(str1, str2): return str1 + str2
+def to_uppercase(s): return s.upper()
+def to_lowercase(s): return s.lower()
+def reverse_string(s): return s[::-1]
+
+
+```
+```python
+# example.py
+
+from mypackage.math_operations import add, multiply
+from mypackage.string_operations import concatenate, reverse_string
+
+print(f"Addition: {add(10, 5)}")
+print(f"Multiplication: {multiply(4, 3)}")
+print(f"Concatenation: {concatenate('Hello, ', 'World!')}")
+print(f"Reversed String: {reverse_string('Python')}")
+
 ```
 
 ### Explanation:
@@ -930,6 +964,7 @@ setup(
 )
 
 ```
+
 
 <div align="center">
 <h3> Connect with me<a href="https://gifyu.com/image/Zy2f"><img src="https://github.com/Gurupatil0003/Gurupatil0003/blob/main/Handshake.gif" width="60"></a>
