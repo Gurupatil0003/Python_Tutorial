@@ -22,7 +22,9 @@
 
 # Function Arguments in Python
 
-**Function arguments** in Python are the values passed to a function when it is called. They allow functions to accept inputs and perform operations on them.
+# Function Arguments in Python
+
+**Function arguments** in Python are the values you pass to a function when calling it. They allow functions to accept inputs and perform operations on those inputs. Here are the different types of function arguments:
 
 - **Positional arguments**: Passed by position.
   - Example: `def func(a, b)`, called as `func(1, 2)`
@@ -30,13 +32,14 @@
 - **Keyword arguments**: Passed by name.
   - Example: `def func(a, b)`, called as `func(a=1, b=2)`
 
-- **Default arguments**: Arguments with default values.
+- **Default arguments**: Arguments with default values. If the caller doesn't pass a value, the default is used.
   - Example: `def func(a, b=2)`, called as `func(1)` or `func(1, 3)`
 
 - **Variable-length arguments**: 
-  - `*args` for non-keyword variable arguments.
-  - `**kwargs` for keyword variable arguments.
+  - `*args` for non-keyword variable arguments (collects extra positional arguments).
+  - `**kwargs` for keyword variable arguments (collects extra keyword arguments).
   - Example: `def func(*args, **kwargs)`
+
 
 
 ## 3. Object-Oriented Programming (OOP) in Python
