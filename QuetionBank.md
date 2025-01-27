@@ -1,5 +1,6 @@
 # Python Full Stack Development - Concepts
 
+# Short Answers
 ## 1. Difference between List and Tuple in Python
 
 - **List**: Mutable (can be modified), defined with square brackets `[]`. Items can be added, removed, or modified.
@@ -207,7 +208,7 @@ main.py
 
 ```
 
-
+# Long Question 4M each
 
 
 ## 2. What is Inheritance in Python? Explain Different Types of Inheritance with an Example
@@ -466,6 +467,7 @@ Error: division by zero
 This will always execute.
 
 ```
+# Long Answer 5M each
 
 # 1.Write a Python program that demonstrates the use of classes and objects.
 
