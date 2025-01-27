@@ -410,6 +410,23 @@ The cow moos
 | **Set operations**       | No                               | `union()`, `intersection()`, etc. | No                                | Not applicable                         |
 | **Access elements**      | Indexing (e.g., `list[0]`)      | No indexing                       | Indexing (e.g., `tuple[0]`)       | Key-based indexing (e.g., `dict[key]`) |
 
+
+| **Operation**            | **List**                         | **Set**                           | **Tuple**                         | **Dictionary**                         |
+|--------------------------|----------------------------------|-----------------------------------|-----------------------------------|----------------------------------------|
+| **Ordered**              | Yes (since Python 3.7)          | No                                | Yes                               | Yes (since Python 3.7)                 |
+| **Mutable**              | Yes                              | Yes                               | No                                | Yes                                    |
+| **Duplicates allowed**   | Yes                              | No                                | No                                | Keys: No, Values: Yes                 |
+| **Indexing**             | Yes <br> Example: `list = [3, 4]`, `list[0]` → `3` | No                                | Yes <br> Example: `tuple = (3, 4)`, `tuple[0]` → `3` | Yes <br> Example: `my_dict = {'a': 1}`, `my_dict['a']` → `1` |
+| **Slicing**              | Yes <br> Example: `list = [3, 4, 5]`, `list[1:3]` → `[4, 5]` | No                                | Yes <br> Example: `tuple = (3, 4, 5)`, `tuple[1:3]` → `(4, 5)` | No (but values can be accessed by key) |
+| **Adding elements**      | `.append()`, `.extend()`, `.insert()` <br> Example: `list = [3, 4]`, `list.append(5)` → `list = [3, 4, 5]` | `.add()`, `.update()` <br> Example: `my_set = {1, 2}`, `my_set.add(3)` → `my_set = {1, 2, 3}` | Not applicable                    | `.update()`, `.setdefault()` <br> Example: `my_dict = {'a': 1}`, `my_dict.update({'b': 2})` → `my_dict = {'a': 1, 'b': 2}` |
+| **Removing elements**    | `.remove()`, `.pop()`, `.clear()` <br> Example: `list = [3, 4, 5]`, `list.pop()` → `list = [3, 4]` | `.remove()`, `.discard()`, `.pop()` <br> Example: `my_set = {1, 2, 3}`, `my_set.remove(2)` → `my_set = {1, 3}` | Not applicable                    | `.pop()`, `.popitem()`, `.clear()` <br> Example: `my_dict = {'a': 1, 'b': 2}`, `my_dict.pop('a')` → `my_dict = {'b': 2}` |
+| **Length**               | `len(list)` <br> Example: `len([3, 4])` → `2` | `len(set)` <br> Example: `len({1, 2})` → `2` | `len(tuple)` <br> Example: `len((3, 4))` → `2` | `len(dict)` <br> Example: `len({'a': 1})` → `1` |
+| **Membership test**      | `in` operator <br> Example: `3 in [3, 4]` → `True` | `in` operator <br> Example: `2 in {1, 2}` → `True` | `in` operator <br> Example: `3 in (3, 4)` → `True` | `in` operator <br> Example: `'a' in {'a': 1}` → `True` |
+| **Iteration**            | `for item in list:` <br> Example: `for item in [3, 4]: print(item)` → `3 4` | `for item in set:` <br> Example: `for item in {1, 2}: print(item)` → `1 2` | `for item in tuple:` <br> Example: `for item in (3, 4): print(item)` → `3 4` | `for key in dict:` <br> Example: `for key in {'a': 1}: print(key)` → `a` |
+| **Concatenation**        | `+` (e.g., `list1 + list2`) <br> Example: `list1 = [1, 2]`, `list2 = [3, 4]`, `list1 + list2` → `[1, 2, 3, 4]` | Not supported                     | `+` (e.g., `tuple1 + tuple2`) <br> Example: `tuple1 = (1, 2)`, `tuple2 = (3, 4)`, `tuple1 + tuple2` → `(1, 2, 3, 4)` | Not supported                         |
+| **Set operations**       | No                               | `union()`, `intersection()`, etc. <br> Example: `set1 = {1, 2}`, `set2 = {2, 3}`, `set1.union(set2)` → `{1, 2, 3}` | No                                | Not applicable                         |
+| **Access elements**      | Indexing (e.g., `list[0]`) <br> Example: `list = [3, 4]`, `list[0]` → `3` | No indexing                       | Indexing (e.g., `tuple[0]`) <br> Example: `tuple = (3, 4)`, `tuple[0]` → `3` | Key-based indexing (e.g., `dict[key]`) <br> Example: `my_dict = {'a': 1}`, `my_dict['a']` → `1` |
+
 ![image](https://github.com/user-attachments/assets/fddf927e-3b53-4c9c-a39f-6a928309892e)
 
 # 8.Explain the significance of the with statement in Python for file handling. Provide an
