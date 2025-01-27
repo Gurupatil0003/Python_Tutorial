@@ -3,8 +3,20 @@
 # Short Answers
 ## 1. Difference between List and Tuple in Python
 
-- **List**: Mutable (can be modified), defined with square brackets `[]`. Items can be added, removed, or modified.
-- **Tuple**: Immutable (cannot be modified), defined with parentheses `()`. Items cannot be added, removed, or modified after creation.
+| **Aspect**              | **List**                                  | **Tuple**                               |
+|-------------------------|-------------------------------------------|-----------------------------------------|
+| **Definition**          | Ordered collection of items, mutable.     | Ordered collection of items, immutable. |
+| **Syntax**              | Defined with square brackets: `[]`        | Defined with parentheses: `()`          |
+| **Mutability**          | Mutable (can be modified after creation). | Immutable (cannot be modified after creation). |
+| **Duplicates**          | Allows duplicates.                        | Allows duplicates.                     |
+| **Indexing**            | Supports indexing (e.g., `list[0]`).      | Supports indexing (e.g., `tuple[0]`).  |
+| **Slicing**             | Supports slicing (e.g., `list[1:3]`).     | Supports slicing (e.g., `tuple[1:3]`). |
+| **Methods**             | Supports many methods (e.g., `.append()`, `.pop()`, `.extend()`). | Supports fewer methods (e.g., `.count()`, `.index()`). |
+| **Performance**         | Slower than tuples due to its mutability. | Faster than lists due to immutability. |
+| **Use Case**            | Used when you need a collection that might change. | Used when you need a collection that won't change. |
+| **Memory Consumption**  | Consumes more memory due to mutability.   | Consumes less memory due to immutability. |
+| **Example**             | `my_list = [1, 2, 3]`                    | `my_tuple = (1, 2, 3)`                  |
+
 
 ## 2. Different Types of Function Arguments in Python
 
