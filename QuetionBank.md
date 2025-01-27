@@ -91,7 +91,6 @@ finally:
     print("Cleaning up resources.")
 ```
 
-# Python Full Stack Development - Concepts
 
 ## 7. Write a short note on data types in python.
 
