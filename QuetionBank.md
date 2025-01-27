@@ -887,6 +887,9 @@ setup(
 
 ```
 
+<div align="center">
+<h3> Connect with me<a href="https://gifyu.com/image/Zy2f"><img src="https://github.com/Gurupatil0003/Gurupatil0003/blob/main/Handshake.gif" width="60"></a>
+</h3> 
 
 <p align="center">
     <a href="https://www.linkedin.com/in/guranna-gouda-039870228/" target="_blank"><img alt="LinkedIn" width="25px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Linkedin.svg"></a>
