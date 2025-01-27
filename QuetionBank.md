@@ -393,6 +393,23 @@ The cow moos
 ```
 ## 7.Describe the differences between lists, sets, tuples, and dictionaries in Python. Provide
   an example for each. 
+
+  | **Operation**            | **List**                         | **Set**                           | **Tuple**                         | **Dictionary**                         |
+|--------------------------|----------------------------------|-----------------------------------|-----------------------------------|----------------------------------------|
+| **Ordered**              | Yes (since Python 3.7)          | No                                | Yes                               | Yes (since Python 3.7)                 |
+| **Mutable**              | Yes                              | Yes                               | No                                | Yes                                    |
+| **Duplicates allowed**   | Yes                              | No                                | No                                | Keys: No, Values: Yes                 |
+| **Indexing**             | Yes                              | No                                | Yes                               | Yes (using keys)                      |
+| **Slicing**              | Yes                              | No                                | Yes                               | No (but values can be accessed by key) |
+| **Adding elements**      | `.append()`, `.extend()`, `.insert()` | `.add()`, `.update()`             | Not applicable                    | `.update()`, `.setdefault()`          |
+| **Removing elements**    | `.remove()`, `.pop()`, `.clear()` | `.remove()`, `.discard()`, `.pop()` | Not applicable                    | `.pop()`, `.popitem()`, `.clear()`    |
+| **Length**               | `len(list)`                     | `len(set)`                        | `len(tuple)`                      | `len(dict)`                           |
+| **Membership test**      | `in` operator                   | `in` operator                    | `in` operator                     | `in` operator (checks for keys)       |
+| **Iteration**            | `for item in list:`             | `for item in set:`                | `for item in tuple:`              | `for key in dict:` (can iterate over keys or values) |
+| **Concatenation**        | `+` (e.g., `list1 + list2`)     | Not supported                     | `+` (e.g., `tuple1 + tuple2`)     | Not supported                         |
+| **Set operations**       | No                               | `union()`, `intersection()`, etc. | No                                | Not applicable                         |
+| **Access elements**      | Indexing (e.g., `list[0]`)      | No indexing                       | Indexing (e.g., `tuple[0]`)       | Key-based indexing (e.g., `dict[key]`) |
+
 ![image](https://github.com/user-attachments/assets/fddf927e-3b53-4c9c-a39f-6a928309892e)
 
 # 8.Explain the significance of the with statement in Python for file handling. Provide an
